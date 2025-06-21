@@ -52,7 +52,7 @@ uvicorn app.main:app --reload
 ## Sample Request
 ```bash
 curl -X POST http://127.0.0.1:8000/books/ -H "Content-Type: application/json" -d '{"title": "1984", "author": "George Orwell", "published_year": 1949, "genre": "Dystopian"}'
-
+```
 ## Frontend Setup
 
 ```bash
