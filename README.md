@@ -30,3 +30,8 @@ uvicorn app.main:app --reload
 ```bash
 curl -X POST http://127.0.0.1:8000/books/ -H "Content-Type: application/json" -d '{"title": "1984", "author": "George Orwell", "published_year": 1949, "genre": "Dystopian"}'
 
+Step 7: Run the API Server
+```python
+uvicorn app.main:app --reload
+```
+> Open browser: http://127.0.0.1:8000/docs for Swagger UI

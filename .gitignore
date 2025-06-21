@@ -1,0 +1,69 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+ENV/
+
+# Editor settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Environment variables
+*.env
+.env.*
+
+# Database files
+*.db
+*.sqlite3
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# PyInstaller
+dist/
+build/
+*.spec
+
+# pytest
+.cache/
+.pytest_cache/
+
+# Coverage reports
+htmlcov/
+.coverage
+coverage.xml
+*.cover
+*.py,cover
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Logs
+*.log
+logs/
+
+# Jupyter (if ever used)
+.ipynb_checkpoints/
+
+# Pydantic schema cache
+__pydantic__/
+
+# Migration files (if using Alembic, you can customize this)
+alembic/versions/
+
+app/__pycache__/main.cpython-312.pyc
+books.db
+books.db

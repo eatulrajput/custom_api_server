@@ -2,11 +2,26 @@ from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
 from . import models, schemas, crud
 from .database import SessionLocal, engine, Base
+from fastapi.middleware.cors import CORSMiddleware
 
 # Create DB tables
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
+
+
+# Allow frontend origin
+origins = [
+    "http://localhost:5174",  # your Vite dev server
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,           # or ["*"] for all
+    allow_credentials=True,
+    allow_methods=["*"],             # allow all HTTP methods
+    allow_headers=["*"],             # allow all headers
+)
 
 # Dependency to get DB session
 def get_db():
