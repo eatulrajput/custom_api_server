@@ -1,0 +1,6 @@
+# .coveragerc
+[run]
+branch = True
+concurrency = thread
+parallel = True
+source = app
