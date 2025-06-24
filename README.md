@@ -90,6 +90,8 @@ app.add_middleware(
 
 ## Testing
 
+For backend testing, I used Pytest. Pytest is a versatile and powerful testing framework for Python that simplifies the process of writing and running tests. It's known for its ease of use, clean syntax, and ability to handle a wide range of testing needs, from simple unit tests to complex functional and integration tests. Pytest's features like assertion introspection, fixtures, and plugin support contribute to its popularity among Python developers
+
 ### Manual Testing Result: 
 
 Click Here - [Link](https://docs.google.com/spreadsheets/d/1BAAdMUCMpejcxzg6ULm1mBoXT5IMFwEZJgyCsTvNVZA/edit?usp=sharing)
