@@ -88,7 +88,7 @@ app.add_middleware(
 
 ---
 
-## Testing
+## Backend Testing
 
 For backend testing, I used Pytest. Pytest is a versatile and powerful testing framework for Python that simplifies the process of writing and running tests. It's known for its ease of use, clean syntax, and ability to handle a wide range of testing needs, from simple unit tests to complex functional and integration tests. Pytest's features like assertion introspection, fixtures, and plugin support contribute to its popularity among Python developers
 
@@ -118,4 +118,23 @@ Click Here - [Link](https://docs.google.com/spreadsheets/d/1BAAdMUCMpejcxzg6ULm1
 ![Screenshot 2](https://github.com/user-attachments/assets/b9e003ec-1abf-4702-b393-30225a5d78a9)
 
 ![Screenshot 3](https://github.com/user-attachments/assets/30ffb36c-1cb3-4bfb-8199-29a1e3f4b616)
+
+---
+## Frontend Testing
+Using Vitest for frontend testing, Vitest is a fast and modern JavaScript testing framework built on top of Vite, a build tool for modern web development. It's designed for unit, integration, and component testing, offering a seamless experience with Vite and compatibility with Jest's API. Vitest aims to provide a fast and efficient testing experience, especially for projects using Vite, with features like hot module replacement and smart watch mode.
+
+### Components Tests
+
+![Components Test](https://github.com/user-attachments/assets/b418dab9-f7f3-4112-882f-f322ffaedc24)
+
+### Unit Tests
+
+![Unit Tests](https://github.com/user-attachments/assets/841a736a-2061-4025-a092-ac454d3b3af2)
+
+## Coverage Report
+
+![Coverage Report](https://github.com/user-attachments/assets/35119acb-ac95-443b-8af8-c24a297ab9c0)
+
+
+
 
