@@ -85,3 +85,11 @@ app.add_middleware(
 - Auth using JWT
 - Export Book List
 - Hosting somewhere over internet for users
+
+---
+
+## Testing
+
+# Manual Testing Result: 
+
+Click here - [Link](https://docs.google.com/spreadsheets/d/1BAAdMUCMpejcxzg6ULm1mBoXT5IMFwEZJgyCsTvNVZA/edit?usp=sharing)

@@ -12,7 +12,7 @@ app = FastAPI()
 
 # Allow frontend origin
 origins = [
-    "http://localhost:5174",  # your Vite dev server
+    "http://localhost:5173",  # your Vite dev server
 ]
 
 app.add_middleware(
