@@ -175,3 +175,15 @@ schema = get_openapi(
 
 with open("openapi.json", "w") as f:
     json.dump(schema, f, indent=2)
+```
+
+### API Testing with Keploy
+
+Using Keploy CLI
+![Screenshot from 2025-06-28 10-38-32](https://github.com/user-attachments/assets/6824f6b1-7f92-44a4-bca0-4522f1ecb38b)
+
+Keploy Testing Platform
+![Screenshot from 2025-06-28 14-39-09](https://github.com/user-attachments/assets/c2c60ee2-a1c7-429e-8638-2c52e6ae9f24)
+
+![Screenshot from 2025-06-28 14-38-53](https://github.com/user-attachments/assets/fa29eee1-5500-464f-ab54-a2c0488b16e5)
+
