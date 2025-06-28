@@ -1,76 +1,93 @@
-# Byte-compiled / cache
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
+*$py.class
+
+# C extensions
 *.so
 
-# Virtual environments
-venv/
-env/
-.venv/
-.env/
-ENV/
-
-# Editor settings
-.vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
-
-# Environment variables
-*.env
-.env.*
-
-# Database files
-*.db
-*.sqlite3
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# PyInstaller
-dist/
+# Distribution / packaging
+.Python
 build/
-*.spec
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# pytest
-.cache/
-.pytest_cache/
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
 
-# Coverage reports
+# Unit test / coverage reports
 htmlcov/
+.tox/
+.nox/
 .coverage
+.coverage.*
+.cache
+nosetests.xml
 coverage.xml
 *.cover
 *.py,cover
+.hypothesis/
+
+# Pytest cache
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Translations
+*.mo
+*.pot
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
 
 # MyPy
 .mypy_cache/
 .dmypy.json
 dmypy.json
 
-# Logs
-*.log
-logs/
+# SQLite database (if you're using SQLite for dev)
+*.sqlite3
 
-# Jupyter (if ever used)
-.ipynb_checkpoints/
-
-# Pydantic schema cache
-__pydantic__/
-
-# Migration files (if using Alembic, you can customize this)
+# SQLAlchemy migration scripts (optional, if you use Alembic)
 alembic/versions/
 
-app/__pycache__/main.cpython-312.pyc
-books.db
-books.db
+# Logs
+*.log
 
+# OS-specific
+.DS_Store
+Thumbs.db
 
-# keploy.yml
-.coverage
-.coveragerc
-.coverage.keploy
-coverage.json
+# Local development
+*.db
+instance/
+local_settings.py
+
+# Vite frontend (optional - if you include frontend in same repo)
+node_modules/
+dist/
