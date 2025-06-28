@@ -1,0 +1,10 @@
+file_coverage:
+    app/crud.py: 77%
+    app/database.py: 100%
+    app/main.py: 94%
+    app/models.py: 100%
+    app/schemas.py: 100%
+total_coverage: 91%
+loc:
+    total: 87
+    covered: 79

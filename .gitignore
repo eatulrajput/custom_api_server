@@ -74,5 +74,3 @@ books.db
 .coveragerc
 .coverage.keploy
 coverage.json
-
-# /keploy/
