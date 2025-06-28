@@ -120,6 +120,7 @@ Click Here - [Link](https://docs.google.com/spreadsheets/d/1BAAdMUCMpejcxzg6ULm1
 ![Screenshot 3](https://github.com/user-attachments/assets/30ffb36c-1cb3-4bfb-8199-29a1e3f4b616)
 
 ---
+<<<<<<< HEAD
 ## Frontend Testing
 Using Vitest for frontend testing, Vitest is a fast and modern JavaScript testing framework built on top of Vite, a build tool for modern web development. It's designed for unit, integration, and component testing, offering a seamless experience with Vite and compatibility with Jest's API. Vitest aims to provide a fast and efficient testing experience, especially for projects using Vite, with features like hot module replacement and smart watch mode.
 
@@ -138,3 +139,42 @@ Using Vitest for frontend testing, Vitest is a fast and modern JavaScript testin
 
 
 
+=======
+### How to generate OpenAPI Schema
+
+> Method 1
+
+Run your app:
+```python
+uvicorn app.main:app --reload
+```
+
+Then run this curl command in another terminal:
+```bash
+curl http://localhost:8000/openapi.json -o openapi.json
+```
+
+This creates an `openapi.json` file in your project directory.
+
+> Method 2
+
+Another way to create OpenAPI schema is doing it manually
+
+```python
+# export_openapi.py
+from fastapi.openapi.utils import get_openapi
+from main import app  # Make sure the correct app is imported
+import json
+
+schema = get_openapi(
+    title=app.title,
+    version=app.version,
+    description=app.description,
+    routes=app.routes,
+)
+
+with open("openapi.json", "w") as f:
+    json.dump(schema, f, indent=2)
+
+```
+>>>>>>> adb73cd (Add OpenAPI, Update Readme, Add Render)
