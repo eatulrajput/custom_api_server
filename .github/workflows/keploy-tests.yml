@@ -1,4 +1,4 @@
-name: Keploy API Tests
+name: Keploy CI API Testing
 
 on:
   push:
@@ -7,29 +7,35 @@ on:
     branches: [main]
 
 jobs:
-  keploy-test:
+  keploy-api-test:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout the repo
+    - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Set up Python
+    - name: Set up Python 3.11
       uses: actions/setup-python@v4
       with:
-        python-version: '3.11'  # Match your local Python version
+        python-version: 3.11
 
-    - name: Set up virtual environment and install dependencies
+    - name: Install app dependencies
       run: |
         python -m venv venv
         source venv/bin/activate
         pip install -r requirements.txt
 
-    - name: Install Keploy
+    - name: Install Keploy CLI
       run: |
         curl -fsSL https://keploy.io/install.sh -o install.sh
         source install.sh
 
-    - name: Run Keploy Tests
+    - name: Run Keploy tests
       run: |
         keploy test -c "python -m uvicorn app.main:app --host 0.0.0.0 --port 8000" --delay 10
+
+    - name: Upload Keploy Reports (Optional)
+      uses: actions/upload-artifact@v3
+      with:
+        name: keploy-report
+        path: keploy/reports
