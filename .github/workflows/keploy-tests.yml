@@ -34,10 +34,6 @@ jobs:
         export KEPLOY_API_KEY=${{ secrets.KEPLOY_API_KEY }}
         keploy test-suite --app=7ce3dd8a-22a6-4561-a8c3-c38144f3920a --base-path https://petclinic-hosted.keploy.io/6819a98767b4adbee7b4c26c/api/ --cloud
 
-          - name: Run Keploy Test Suite
-  run: |
-    export KEPLOY_API_KEY=${{ secrets.KEPLOY_API_KEY }}
-    keploy test-suite --app=03d24177-315c-4ee1-a3ac-64ed0ab38567 --base-path http://localhost:8080/books --cloud
 
     - name: Upload Keploy Reports (Optional)
       uses: actions/upload-artifact@v4
