@@ -1,42 +1,7 @@
-name: Keploy CI API Testing
+- name: Install Keploy CLI
+  run: |
+    curl --silent -L https://keploy.io/ent/install.sh | bash
 
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
-
-jobs:
-  keploy-api-test:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
-
-    - name: Set up Python 3.11
-      uses: actions/setup-python@v4
-      with:
-        python-version: 3.11
-
-    - name: Install app dependencies
-      run: |
-        python -m venv venv
-        source venv/bin/activate
-        pip install -r requirements.txt
-
-    - name: Install Keploy CLI
-      run: |
-        curl -fsSL https://keploy.io/install.sh -o install.sh
-        source install.sh
-
-    - name: Run Keploy tests
-      run: |
-        keploy test -c "python -m uvicorn app.main:app --host 0.0.0.0 --port 8000" --delay 10
-
-    - name: Upload Keploy Reports (Optional)
-      uses: actions/upload-artifact@v4
-      with:
-        name: keploy-report
-        path: keploy/reports
-
+    - name: Run Keploy Test Suite
+  run: |
+    export KEPLOY_API_KEY=SG5XMplTdz6BiitBOw== && keploy test-suite --app=7ce3dd8a-22a6-4561-a8c3-c38144f3920a --base-path https://petclinic-hosted.keploy.io/6819a98767b4adbee7b4c26c/api/ --cloud
