@@ -26,9 +26,9 @@ jobs:
         pip install -r requirements.txt
 
     - name: Install Keploy with error check
-  run: |
-    curl -fsSL https://correct-url.sh -o install.sh
-    bash install.sh
+      run: |
+        curl -fsSL https://github.com/keploy/keploy/releases/latest/download/install.sh -o install.sh
+        bash install.sh
 
     - name: Run Keploy Tests
       run: |
