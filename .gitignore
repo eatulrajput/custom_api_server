@@ -67,3 +67,12 @@ alembic/versions/
 app/__pycache__/main.cpython-312.pyc
 books.db
 books.db
+
+
+keploy.yml
+.coverage
+.coveragerc
+.coverage.keploy
+coverage.json
+
+/keploy/
