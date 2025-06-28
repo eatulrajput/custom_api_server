@@ -25,11 +25,11 @@ jobs:
         source venv/bin/activate
         pip install -r requirements.txt
 
-    - name: Install Keploy with error check
+    - name: Install Keploy
       run: |
-        curl -fsSL https://github.com/keploy/keploy/releases/latest/download/install.sh -o install.sh
-        bash install.sh
+        curl -fsSL https://keploy.io/install.sh -o install.sh
+        source install.sh
 
     - name: Run Keploy Tests
       run: |
-        keploy test -c "python -m uvicorn app.main:app --host 0.0.0.0 --port 8000"
+        keploy test -c "python -m uvicorn app.main:app --host 0.0.0.0 --port 8000" --delay 10
