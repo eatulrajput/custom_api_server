@@ -69,10 +69,10 @@ books.db
 books.db
 
 
-keploy.yml
+# keploy.yml
 .coverage
 .coveragerc
 .coverage.keploy
 coverage.json
 
-/keploy/
+# /keploy/
