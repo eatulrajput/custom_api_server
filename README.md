@@ -175,6 +175,3 @@ schema = get_openapi(
 
 with open("openapi.json", "w") as f:
     json.dump(schema, f, indent=2)
-
-```
->>>>>>> adb73cd (Add OpenAPI, Update Readme, Add Render)
